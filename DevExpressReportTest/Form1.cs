@@ -47,6 +47,11 @@ namespace DevExpressReportTest
             report.Parameters["orderType"].Value = "발주";
             report.Parameters["slipno"].Value = "1234567890";
 
+            report.Parameters["orderDate"].Visible = false;
+            report.Parameters["whcd"].Visible = false;
+            report.Parameters["orderType"].Visible = false;
+            report.Parameters["slipno"].Visible = false;
+
             using (ReportPrintTool printTool = new ReportPrintTool(report))
             {
                 printTool.PrintDialog();
