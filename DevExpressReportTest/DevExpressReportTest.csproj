@@ -179,6 +179,9 @@
       <DependentUpon>DataSetReport.xsd</DependentUpon>
     </None>
     <None Include="DevExpressReportTest_TemporaryKey.pfx" />
+    <Content Include="kdexp.repx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="Properties\app.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

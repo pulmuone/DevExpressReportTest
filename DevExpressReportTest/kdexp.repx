@@ -1,0 +1,906 @@
+/// <XRTypeInfo>
+///   <AssemblyFullName>DevExpress.XtraReports.v11.1, Version=11.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</AssemblyFullName>
+///   <AssemblyLocation>C:\WINDOWS\assembly\GAC_MSIL\DevExpress.XtraReports.v11.1\11.1.8.0__b88d1754d700e49a\DevExpress.XtraReports.v11.1.dll</AssemblyLocation>
+///   <TypeName>DevExpress.XtraReports.UI.XtraReport</TypeName>
+///   <Localization>ko-KR</Localization>
+/// </XRTypeInfo>
+namespace XtraReportSerialization {
+    
+    public class kdexp : DevExpress.XtraReports.UI.XtraReport {
+        private DevExpress.XtraReports.UI.TopMarginBand TopMargin;
+        private DevExpress.XtraReports.UI.DetailBand Detail;
+        private DevExpress.XtraReports.UI.XRLabel Label_SEND_ZIPCODE;
+        private DevExpress.XtraReports.Parameters.Parameter SEND_ZIPCODE;
+        private DevExpress.XtraReports.UI.XRShape shape1;
+        private DevExpress.XtraReports.UI.XRLabel Label_CUSTOMER_CENTER;
+        private DevExpress.XtraReports.Parameters.Parameter CUSTOMER_CENTER;
+        private DevExpress.XtraReports.UI.XRLabel Label_PD_DOCK2;
+        private DevExpress.XtraReports.Parameters.Parameter PD_DOCK2;
+        private DevExpress.XtraReports.UI.XRLabel Label_PD_MEMO;
+        private DevExpress.XtraReports.Parameters.Parameter PD_MEMO;
+        private DevExpress.XtraReports.UI.XRLabel Label_PD_TEMP;
+        private DevExpress.XtraReports.Parameters.Parameter PD_TEMP;
+        private DevExpress.XtraReports.UI.XRLabel Label_RECV_ZIPCODE;
+        private DevExpress.XtraReports.Parameters.Parameter RECV_ZIPCODE;
+        private DevExpress.XtraReports.UI.XRLabel Label_RECV_ADDR2;
+        private DevExpress.XtraReports.Parameters.Parameter RECV_ADDR2;
+        private DevExpress.XtraReports.UI.XRLabel Label_RECV_ADDR1;
+        private DevExpress.XtraReports.Parameters.Parameter RECV_ADDR1;
+        private DevExpress.XtraReports.UI.XRLabel label21;
+        private DevExpress.XtraReports.UI.XRLabel Label_RECV_TEL2;
+        private DevExpress.XtraReports.Parameters.Parameter RECV_TEL2;
+        private DevExpress.XtraReports.UI.XRLabel Label_RECV_TEL1;
+        private DevExpress.XtraReports.Parameters.Parameter RECV_TEL1;
+        private DevExpress.XtraReports.UI.XRLabel Label_RECV_NM;
+        private DevExpress.XtraReports.Parameters.Parameter RECV_NM;
+        private DevExpress.XtraReports.UI.XRLabel label20;
+        private DevExpress.XtraReports.UI.XRLabel Label_BR_END_TEL;
+        private DevExpress.XtraReports.Parameters.Parameter BR_END_TEL;
+        private DevExpress.XtraReports.UI.XRLabel Label_BR_END_NM;
+        private DevExpress.XtraReports.Parameters.Parameter BR_END_NM;
+        private DevExpress.XtraReports.UI.XRLabel Label_PD_BARCODE_SEQ;
+        private DevExpress.XtraReports.Parameters.Parameter PD_BARCODE_SEQ;
+        private DevExpress.XtraReports.UI.XRBarCode barCode1;
+        private DevExpress.XtraReports.UI.XRLabel Label_PD_DOCK1;
+        private DevExpress.XtraReports.Parameters.Parameter PD_DOCK1;
+        private DevExpress.XtraReports.UI.XRLabel label16;
+        private DevExpress.XtraReports.UI.XRLabel Label_PD_PACK;
+        private DevExpress.XtraReports.Parameters.Parameter PD_PACK;
+        private DevExpress.XtraReports.UI.XRLabel Label_PAGE_INFO;
+        private DevExpress.XtraReports.Parameters.Parameter PAGE_INFO;
+        private DevExpress.XtraReports.UI.XRLabel Label_PD_DELI_GUBUN;
+        private DevExpress.XtraReports.Parameters.Parameter PD_DELI_GUBUN;
+        private DevExpress.XtraReports.UI.XRLabel Label_PD_NM;
+        private DevExpress.XtraReports.Parameters.Parameter PD_NM;
+        private DevExpress.XtraReports.UI.XRLabel Label_SEND_NM;
+        private DevExpress.XtraReports.Parameters.Parameter SEND_NM;
+        private DevExpress.XtraReports.UI.XRLabel Label_PD_BAROCDE;
+        private DevExpress.XtraReports.Parameters.Parameter PD_BARCODE;
+        private DevExpress.XtraReports.UI.XRLabel label9;
+        private DevExpress.XtraReports.Parameters.Parameter SEND_ADDR2;
+        private DevExpress.XtraReports.UI.XRLabel Label_SEND_ADDR1;
+        private DevExpress.XtraReports.Parameters.Parameter SEND_ADDR1;
+        private DevExpress.XtraReports.UI.XRLabel Label_SEND_TEL2;
+        private DevExpress.XtraReports.Parameters.Parameter SEND_TEL2;
+        private DevExpress.XtraReports.UI.XRLabel Label_SEND_TEL1;
+        private DevExpress.XtraReports.Parameters.Parameter SEND_TEL1;
+        private DevExpress.XtraReports.UI.XRLabel Label_BR_TEL;
+        private DevExpress.XtraReports.Parameters.Parameter BR_TEL;
+        private DevExpress.XtraReports.UI.XRLabel Label_BR_NM;
+        private DevExpress.XtraReports.Parameters.Parameter BR_NM;
+        private DevExpress.XtraReports.UI.XRLabel Label_SEND_DATE_INFO;
+        private DevExpress.XtraReports.Parameters.Parameter SEND_DATE_INFO;
+        private DevExpress.XtraReports.UI.XRLine line6;
+        private DevExpress.XtraReports.UI.XRLine line5;
+        private DevExpress.XtraReports.UI.XRLine line4;
+        private DevExpress.XtraReports.UI.XRLine line2;
+        private DevExpress.XtraReports.UI.XRLine line3;
+        private DevExpress.XtraReports.UI.XRLabel label2;
+        private DevExpress.XtraReports.UI.XRLine line1;
+        private DevExpress.XtraReports.UI.XRLabel label1;
+        private DevExpress.XtraReports.UI.BottomMarginBand BottomMargin;
+        private System.Resources.ResourceManager _resources;
+        public kdexp() {
+            this.InitializeComponent();
+        }
+        private System.Resources.ResourceManager resources {
+            get {
+                if (_resources == null) {
+                    string resourceString = "zsrvvgEAAACRAAAAbFN5c3RlbS5SZXNvdXJjZXMuUmVzb3VyY2VSZWFkZXIsIG1zY29ybGliLCBWZXJza" +
+                        "W9uPTIuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4O" +
+                        "SNTeXN0ZW0uUmVzb3VyY2VzLlJ1bnRpbWVSZXNvdXJjZVNldAIAAAAAAAAAAAAAAFBBRFBBRFC0AAAA";
+                    this._resources = new DevExpress.XtraReports.Serialization.XRResourceManager(resourceString);
+                }
+                return this._resources;
+            }
+        }
+        private void InitializeComponent() {
+            DevExpress.XtraPrinting.Shape.ShapeRectangle shapeRectangle1 = new DevExpress.XtraPrinting.Shape.ShapeRectangle();
+            DevExpress.XtraPrinting.BarCode.Code128Generator code128Generator1 = new DevExpress.XtraPrinting.BarCode.Code128Generator();
+            this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
+            this.Detail = new DevExpress.XtraReports.UI.DetailBand();
+            this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
+            this.Label_SEND_ZIPCODE = new DevExpress.XtraReports.UI.XRLabel();
+            this.shape1 = new DevExpress.XtraReports.UI.XRShape();
+            this.Label_CUSTOMER_CENTER = new DevExpress.XtraReports.UI.XRLabel();
+            this.Label_PD_DOCK2 = new DevExpress.XtraReports.UI.XRLabel();
+            this.Label_PD_MEMO = new DevExpress.XtraReports.UI.XRLabel();
+            this.Label_PD_TEMP = new DevExpress.XtraReports.UI.XRLabel();
+            this.Label_RECV_ZIPCODE = new DevExpress.XtraReports.UI.XRLabel();
+            this.Label_RECV_ADDR2 = new DevExpress.XtraReports.UI.XRLabel();
+            this.Label_RECV_ADDR1 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label21 = new DevExpress.XtraReports.UI.XRLabel();
+            this.Label_RECV_TEL2 = new DevExpress.XtraReports.UI.XRLabel();
+            this.Label_RECV_TEL1 = new DevExpress.XtraReports.UI.XRLabel();
+            this.Label_RECV_NM = new DevExpress.XtraReports.UI.XRLabel();
+            this.label20 = new DevExpress.XtraReports.UI.XRLabel();
+            this.Label_BR_END_TEL = new DevExpress.XtraReports.UI.XRLabel();
+            this.Label_BR_END_NM = new DevExpress.XtraReports.UI.XRLabel();
+            this.Label_PD_BARCODE_SEQ = new DevExpress.XtraReports.UI.XRLabel();
+            this.barCode1 = new DevExpress.XtraReports.UI.XRBarCode();
+            this.Label_PD_DOCK1 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label16 = new DevExpress.XtraReports.UI.XRLabel();
+            this.Label_PD_PACK = new DevExpress.XtraReports.UI.XRLabel();
+            this.Label_PAGE_INFO = new DevExpress.XtraReports.UI.XRLabel();
+            this.Label_PD_DELI_GUBUN = new DevExpress.XtraReports.UI.XRLabel();
+            this.Label_PD_NM = new DevExpress.XtraReports.UI.XRLabel();
+            this.Label_SEND_NM = new DevExpress.XtraReports.UI.XRLabel();
+            this.Label_PD_BAROCDE = new DevExpress.XtraReports.UI.XRLabel();
+            this.label9 = new DevExpress.XtraReports.UI.XRLabel();
+            this.Label_SEND_ADDR1 = new DevExpress.XtraReports.UI.XRLabel();
+            this.Label_SEND_TEL2 = new DevExpress.XtraReports.UI.XRLabel();
+            this.Label_SEND_TEL1 = new DevExpress.XtraReports.UI.XRLabel();
+            this.Label_BR_TEL = new DevExpress.XtraReports.UI.XRLabel();
+            this.Label_BR_NM = new DevExpress.XtraReports.UI.XRLabel();
+            this.Label_SEND_DATE_INFO = new DevExpress.XtraReports.UI.XRLabel();
+            this.line6 = new DevExpress.XtraReports.UI.XRLine();
+            this.line5 = new DevExpress.XtraReports.UI.XRLine();
+            this.line4 = new DevExpress.XtraReports.UI.XRLine();
+            this.line2 = new DevExpress.XtraReports.UI.XRLine();
+            this.line3 = new DevExpress.XtraReports.UI.XRLine();
+            this.label2 = new DevExpress.XtraReports.UI.XRLabel();
+            this.line1 = new DevExpress.XtraReports.UI.XRLine();
+            this.label1 = new DevExpress.XtraReports.UI.XRLabel();
+            this.BR_NM = new DevExpress.XtraReports.Parameters.Parameter();
+            this.SEND_DATE_INFO = new DevExpress.XtraReports.Parameters.Parameter();
+            this.BR_TEL = new DevExpress.XtraReports.Parameters.Parameter();
+            this.SEND_TEL1 = new DevExpress.XtraReports.Parameters.Parameter();
+            this.SEND_TEL2 = new DevExpress.XtraReports.Parameters.Parameter();
+            this.SEND_ADDR1 = new DevExpress.XtraReports.Parameters.Parameter();
+            this.SEND_ADDR2 = new DevExpress.XtraReports.Parameters.Parameter();
+            this.PD_BARCODE = new DevExpress.XtraReports.Parameters.Parameter();
+            this.SEND_NM = new DevExpress.XtraReports.Parameters.Parameter();
+            this.PD_NM = new DevExpress.XtraReports.Parameters.Parameter();
+            this.PD_DELI_GUBUN = new DevExpress.XtraReports.Parameters.Parameter();
+            this.PAGE_INFO = new DevExpress.XtraReports.Parameters.Parameter();
+            this.PD_PACK = new DevExpress.XtraReports.Parameters.Parameter();
+            this.PD_DOCK1 = new DevExpress.XtraReports.Parameters.Parameter();
+            this.PD_BARCODE_SEQ = new DevExpress.XtraReports.Parameters.Parameter();
+            this.BR_END_NM = new DevExpress.XtraReports.Parameters.Parameter();
+            this.BR_END_TEL = new DevExpress.XtraReports.Parameters.Parameter();
+            this.RECV_NM = new DevExpress.XtraReports.Parameters.Parameter();
+            this.RECV_TEL1 = new DevExpress.XtraReports.Parameters.Parameter();
+            this.RECV_TEL2 = new DevExpress.XtraReports.Parameters.Parameter();
+            this.RECV_ADDR1 = new DevExpress.XtraReports.Parameters.Parameter();
+            this.RECV_ADDR2 = new DevExpress.XtraReports.Parameters.Parameter();
+            this.RECV_ZIPCODE = new DevExpress.XtraReports.Parameters.Parameter();
+            this.PD_TEMP = new DevExpress.XtraReports.Parameters.Parameter();
+            this.PD_MEMO = new DevExpress.XtraReports.Parameters.Parameter();
+            this.PD_DOCK2 = new DevExpress.XtraReports.Parameters.Parameter();
+            this.CUSTOMER_CENTER = new DevExpress.XtraReports.Parameters.Parameter();
+            this.SEND_ZIPCODE = new DevExpress.XtraReports.Parameters.Parameter();
+            ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
+            // 
+            // TopMargin
+            // 
+            this.TopMargin.HeightF = 5F;
+            this.TopMargin.Name = "TopMargin";
+            this.TopMargin.Visible = false;
+            // 
+            // Detail
+            // 
+            this.Detail.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+                        this.Label_SEND_ZIPCODE,
+                        this.shape1,
+                        this.Label_CUSTOMER_CENTER,
+                        this.Label_PD_DOCK2,
+                        this.Label_PD_MEMO,
+                        this.Label_PD_TEMP,
+                        this.Label_RECV_ZIPCODE,
+                        this.Label_RECV_ADDR2,
+                        this.Label_RECV_ADDR1,
+                        this.label21,
+                        this.Label_RECV_TEL2,
+                        this.Label_RECV_TEL1,
+                        this.Label_RECV_NM,
+                        this.label20,
+                        this.Label_BR_END_TEL,
+                        this.Label_BR_END_NM,
+                        this.Label_PD_BARCODE_SEQ,
+                        this.barCode1,
+                        this.Label_PD_DOCK1,
+                        this.label16,
+                        this.Label_PD_PACK,
+                        this.Label_PAGE_INFO,
+                        this.Label_PD_DELI_GUBUN,
+                        this.Label_PD_NM,
+                        this.Label_SEND_NM,
+                        this.Label_PD_BAROCDE,
+                        this.label9,
+                        this.Label_SEND_ADDR1,
+                        this.Label_SEND_TEL2,
+                        this.Label_SEND_TEL1,
+                        this.Label_BR_TEL,
+                        this.Label_BR_NM,
+                        this.Label_SEND_DATE_INFO,
+                        this.line6,
+                        this.line5,
+                        this.line4,
+                        this.line2,
+                        this.line3,
+                        this.label2,
+                        this.line1,
+                        this.label1});
+            this.Detail.HeightF = 380F;
+            this.Detail.Name = "Detail";
+            this.Detail.SnapLinePadding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
+            // 
+            // BottomMargin
+            // 
+            this.BottomMargin.HeightF = 0F;
+            this.BottomMargin.Name = "BottomMargin";
+            this.BottomMargin.Visible = false;
+            // 
+            // Label_SEND_ZIPCODE
+            // 
+            this.Label_SEND_ZIPCODE.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding(this.SEND_ZIPCODE, "Text", "")});
+            this.Label_SEND_ZIPCODE.Font = new System.Drawing.Font("HY견고딕", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.Label_SEND_ZIPCODE.LocationFloat = new DevExpress.Utils.PointFloat(0.9920712F, 123.5893F);
+            this.Label_SEND_ZIPCODE.Name = "Label_SEND_ZIPCODE";
+            this.Label_SEND_ZIPCODE.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.Label_SEND_ZIPCODE.SizeF = new System.Drawing.SizeF(66.71627F, 20.00002F);
+            this.Label_SEND_ZIPCODE.StylePriority.UseFont = false;
+            // 
+            // shape1
+            // 
+            this.shape1.FillColor = System.Drawing.Color.Black;
+            this.shape1.LocationFloat = new DevExpress.Utils.PointFloat(701.637F, 59.57539F);
+            this.shape1.Name = "shape1";
+            this.shape1.Shape = shapeRectangle1;
+            this.shape1.SizeF = new System.Drawing.SizeF(73.2887F, 308.7282F);
+            // 
+            // Label_CUSTOMER_CENTER
+            // 
+            this.Label_CUSTOMER_CENTER.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding(this.CUSTOMER_CENTER, "Text", "")});
+            this.Label_CUSTOMER_CENTER.Font = new System.Drawing.Font("HY견고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.Label_CUSTOMER_CENTER.LocationFloat = new DevExpress.Utils.PointFloat(353.1905F, 308.2885F);
+            this.Label_CUSTOMER_CENTER.Name = "Label_CUSTOMER_CENTER";
+            this.Label_CUSTOMER_CENTER.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.Label_CUSTOMER_CENTER.SizeF = new System.Drawing.SizeF(339.8088F, 22.99997F);
+            this.Label_CUSTOMER_CENTER.StylePriority.UseFont = false;
+            // 
+            // Label_PD_DOCK2
+            // 
+            this.Label_PD_DOCK2.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding(this.PD_DOCK2, "Text", "")});
+            this.Label_PD_DOCK2.Font = new System.Drawing.Font("HY견고딕", 20F);
+            this.Label_PD_DOCK2.LocationFloat = new DevExpress.Utils.PointFloat(353.1905F, 254F);
+            this.Label_PD_DOCK2.Name = "Label_PD_DOCK2";
+            this.Label_PD_DOCK2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.Label_PD_DOCK2.SizeF = new System.Drawing.SizeF(339.8089F, 54.28851F);
+            this.Label_PD_DOCK2.StylePriority.UseFont = false;
+            // 
+            // Label_PD_MEMO
+            // 
+            this.Label_PD_MEMO.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding(this.PD_MEMO, "Text", "")});
+            this.Label_PD_MEMO.Font = new System.Drawing.Font("HY견고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.Label_PD_MEMO.LocationFloat = new DevExpress.Utils.PointFloat(353.1911F, 206F);
+            this.Label_PD_MEMO.Name = "Label_PD_MEMO";
+            this.Label_PD_MEMO.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.Label_PD_MEMO.SizeF = new System.Drawing.SizeF(339.8091F, 46.00002F);
+            this.Label_PD_MEMO.StylePriority.UseFont = false;
+            // 
+            // Label_PD_TEMP
+            // 
+            this.Label_PD_TEMP.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding(this.PD_TEMP, "Text", "")});
+            this.Label_PD_TEMP.Font = new System.Drawing.Font("HY견고딕", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.Label_PD_TEMP.LocationFloat = new DevExpress.Utils.PointFloat(602.0836F, 0F);
+            this.Label_PD_TEMP.Name = "Label_PD_TEMP";
+            this.Label_PD_TEMP.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.Label_PD_TEMP.SizeF = new System.Drawing.SizeF(90.91577F, 67.57539F);
+            this.Label_PD_TEMP.StylePriority.UseFont = false;
+            // 
+            // Label_RECV_ZIPCODE
+            // 
+            this.Label_RECV_ZIPCODE.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding(this.RECV_ZIPCODE, "Text", "")});
+            this.Label_RECV_ZIPCODE.Font = new System.Drawing.Font("HY견고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.Label_RECV_ZIPCODE.LocationFloat = new DevExpress.Utils.PointFloat(353.1905F, 164F);
+            this.Label_RECV_ZIPCODE.Name = "Label_RECV_ZIPCODE";
+            this.Label_RECV_ZIPCODE.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.Label_RECV_ZIPCODE.SizeF = new System.Drawing.SizeF(66.31F, 20F);
+            this.Label_RECV_ZIPCODE.StylePriority.UseFont = false;
+            // 
+            // Label_RECV_ADDR2
+            // 
+            this.Label_RECV_ADDR2.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding(this.RECV_ADDR2, "Text", "")});
+            this.Label_RECV_ADDR2.Font = new System.Drawing.Font("HY견고딕", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.Label_RECV_ADDR2.LocationFloat = new DevExpress.Utils.PointFloat(353.1905F, 184F);
+            this.Label_RECV_ADDR2.Name = "Label_RECV_ADDR2";
+            this.Label_RECV_ADDR2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.Label_RECV_ADDR2.SizeF = new System.Drawing.SizeF(339.809F, 20F);
+            this.Label_RECV_ADDR2.StylePriority.UseFont = false;
+            // 
+            // Label_RECV_ADDR1
+            // 
+            this.Label_RECV_ADDR1.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding(this.RECV_ADDR1, "Text", "")});
+            this.Label_RECV_ADDR1.Font = new System.Drawing.Font("HY견고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.Label_RECV_ADDR1.LocationFloat = new DevExpress.Utils.PointFloat(419.5005F, 164F);
+            this.Label_RECV_ADDR1.Name = "Label_RECV_ADDR1";
+            this.Label_RECV_ADDR1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.Label_RECV_ADDR1.SizeF = new System.Drawing.SizeF(273.499F, 20.00003F);
+            this.Label_RECV_ADDR1.StylePriority.UseFont = false;
+            // 
+            // label21
+            // 
+            this.label21.Font = new System.Drawing.Font("HY견고딕", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label21.LocationFloat = new DevExpress.Utils.PointFloat(353.1905F, 145F);
+            this.label21.Name = "label21";
+            this.label21.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label21.SizeF = new System.Drawing.SizeF(94.27084F, 15F);
+            this.label21.StylePriority.UseFont = false;
+            this.label21.Text = "받는 고객주소";
+            // 
+            // Label_RECV_TEL2
+            // 
+            this.Label_RECV_TEL2.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding(this.RECV_TEL2, "Text", "")});
+            this.Label_RECV_TEL2.Font = new System.Drawing.Font("HY견고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.Label_RECV_TEL2.LocationFloat = new DevExpress.Utils.PointFloat(517.5905F, 116F);
+            this.Label_RECV_TEL2.Name = "Label_RECV_TEL2";
+            this.Label_RECV_TEL2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.Label_RECV_TEL2.SizeF = new System.Drawing.SizeF(150.55F, 20F);
+            this.Label_RECV_TEL2.StylePriority.UseFont = false;
+            // 
+            // Label_RECV_TEL1
+            // 
+            this.Label_RECV_TEL1.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding(this.RECV_TEL1, "Text", "")});
+            this.Label_RECV_TEL1.Font = new System.Drawing.Font("HY견고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.Label_RECV_TEL1.LocationFloat = new DevExpress.Utils.PointFloat(353.1905F, 116F);
+            this.Label_RECV_TEL1.Name = "Label_RECV_TEL1";
+            this.Label_RECV_TEL1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.Label_RECV_TEL1.SizeF = new System.Drawing.SizeF(164.4F, 20F);
+            this.Label_RECV_TEL1.StylePriority.UseFont = false;
+            this.Label_RECV_TEL1.Text = "Label_RECV_TEL1";
+            // 
+            // Label_RECV_NM
+            // 
+            this.Label_RECV_NM.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding(this.RECV_NM, "Text", "")});
+            this.Label_RECV_NM.Font = new System.Drawing.Font("HY견고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.Label_RECV_NM.LocationFloat = new DevExpress.Utils.PointFloat(353.1905F, 87.58928F);
+            this.Label_RECV_NM.Name = "Label_RECV_NM";
+            this.Label_RECV_NM.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.Label_RECV_NM.SizeF = new System.Drawing.SizeF(248.8932F, 28.41072F);
+            this.Label_RECV_NM.StylePriority.UseFont = false;
+            // 
+            // label20
+            // 
+            this.label20.Font = new System.Drawing.Font("HY견고딕", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label20.LocationFloat = new DevExpress.Utils.PointFloat(353.1904F, 72.58928F);
+            this.label20.Name = "label20";
+            this.label20.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label20.SizeF = new System.Drawing.SizeF(80.65475F, 15F);
+            this.label20.StylePriority.UseFont = false;
+            this.label20.Text = "받는 고객명";
+            // 
+            // Label_BR_END_TEL
+            // 
+            this.Label_BR_END_TEL.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding(this.BR_END_TEL, "Text", "")});
+            this.Label_BR_END_TEL.Font = new System.Drawing.Font("HY견고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.Label_BR_END_TEL.LocationFloat = new DevExpress.Utils.PointFloat(353.1905F, 48.04762F);
+            this.Label_BR_END_TEL.Name = "Label_BR_END_TEL";
+            this.Label_BR_END_TEL.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.Label_BR_END_TEL.SizeF = new System.Drawing.SizeF(248.8932F, 19.52777F);
+            this.Label_BR_END_TEL.StylePriority.UseFont = false;
+            // 
+            // Label_BR_END_NM
+            // 
+            this.Label_BR_END_NM.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding(this.BR_END_NM, "Text", "")});
+            this.Label_BR_END_NM.Font = new System.Drawing.Font("HY견고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.Label_BR_END_NM.LocationFloat = new DevExpress.Utils.PointFloat(353.1905F, 17.04762F);
+            this.Label_BR_END_NM.Name = "Label_BR_END_NM";
+            this.Label_BR_END_NM.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.Label_BR_END_NM.SizeF = new System.Drawing.SizeF(248.8932F, 31F);
+            this.Label_BR_END_NM.StylePriority.UseFont = false;
+            // 
+            // Label_PD_BARCODE_SEQ
+            // 
+            this.Label_PD_BARCODE_SEQ.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding(this.PD_BARCODE_SEQ, "Text", "")});
+            this.Label_PD_BARCODE_SEQ.Font = new System.Drawing.Font("HY견고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.Label_PD_BARCODE_SEQ.LocationFloat = new DevExpress.Utils.PointFloat(12.83928F, 351.7362F);
+            this.Label_PD_BARCODE_SEQ.Name = "Label_PD_BARCODE_SEQ";
+            this.Label_PD_BARCODE_SEQ.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.Label_PD_BARCODE_SEQ.SizeF = new System.Drawing.SizeF(326F, 22.99997F);
+            this.Label_PD_BARCODE_SEQ.StylePriority.UseFont = false;
+            this.Label_PD_BARCODE_SEQ.StylePriority.UseTextAlignment = false;
+            this.Label_PD_BARCODE_SEQ.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
+            // 
+            // barCode1
+            // 
+            this.barCode1.Alignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            this.barCode1.AutoModule = true;
+            this.barCode1.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding(this.PD_BARCODE_SEQ, "Text", "")});
+            this.barCode1.Font = new System.Drawing.Font("HY견고딕", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.barCode1.LocationFloat = new DevExpress.Utils.PointFloat(12.83928F, 308.2886F);
+            this.barCode1.Name = "barCode1";
+            this.barCode1.Padding = new DevExpress.XtraPrinting.PaddingInfo(10, 10, 0, 0, 100F);
+            this.barCode1.ShowText = false;
+            this.barCode1.SizeF = new System.Drawing.SizeF(326F, 43.44754F);
+            this.barCode1.StylePriority.UseFont = false;
+            this.barCode1.Symbology = code128Generator1;
+            // 
+            // Label_PD_DOCK1
+            // 
+            this.Label_PD_DOCK1.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding(this.PD_DOCK1, "Text", "")});
+            this.Label_PD_DOCK1.Font = new System.Drawing.Font("HY견고딕", 20F);
+            this.Label_PD_DOCK1.LocationFloat = new DevExpress.Utils.PointFloat(0.9920939F, 254F);
+            this.Label_PD_DOCK1.Name = "Label_PD_DOCK1";
+            this.Label_PD_DOCK1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.Label_PD_DOCK1.SizeF = new System.Drawing.SizeF(337.8472F, 54.28857F);
+            this.Label_PD_DOCK1.StylePriority.UseFont = false;
+            // 
+            // label16
+            // 
+            this.label16.Font = new System.Drawing.Font("HY견고딕", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label16.LocationFloat = new DevExpress.Utils.PointFloat(179.8611F, 215.5834F);
+            this.label16.Name = "label16";
+            this.label16.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label16.SizeF = new System.Drawing.SizeF(17.36115F, 23.00002F);
+            this.label16.StylePriority.UseFont = false;
+            this.label16.StylePriority.UseTextAlignment = false;
+            this.label16.Text = "/";
+            this.label16.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // Label_PD_PACK
+            // 
+            this.Label_PD_PACK.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding(this.PD_PACK, "Text", "")});
+            this.Label_PD_PACK.Font = new System.Drawing.Font("HY견고딕", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.Label_PD_PACK.LocationFloat = new DevExpress.Utils.PointFloat(197.2223F, 215.5834F);
+            this.Label_PD_PACK.Name = "Label_PD_PACK";
+            this.Label_PD_PACK.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.Label_PD_PACK.SizeF = new System.Drawing.SizeF(114.1369F, 23F);
+            this.Label_PD_PACK.StylePriority.UseFont = false;
+            this.Label_PD_PACK.StylePriority.UseTextAlignment = false;
+            this.Label_PD_PACK.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // Label_PAGE_INFO
+            // 
+            this.Label_PAGE_INFO.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding(this.PAGE_INFO, "Text", "")});
+            this.Label_PAGE_INFO.Font = new System.Drawing.Font("HY견고딕", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.Label_PAGE_INFO.LocationFloat = new DevExpress.Utils.PointFloat(80.65475F, 215.5834F);
+            this.Label_PAGE_INFO.Name = "Label_PAGE_INFO";
+            this.Label_PAGE_INFO.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.Label_PAGE_INFO.SizeF = new System.Drawing.SizeF(99.20638F, 23.00002F);
+            this.Label_PAGE_INFO.StylePriority.UseFont = false;
+            this.Label_PAGE_INFO.StylePriority.UseTextAlignment = false;
+            this.Label_PAGE_INFO.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // Label_PD_DELI_GUBUN
+            // 
+            this.Label_PD_DELI_GUBUN.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding(this.PD_DELI_GUBUN, "Text", "")});
+            this.Label_PD_DELI_GUBUN.Font = new System.Drawing.Font("HY견고딕", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.Label_PD_DELI_GUBUN.LocationFloat = new DevExpress.Utils.PointFloat(0.9920712F, 215.5834F);
+            this.Label_PD_DELI_GUBUN.Name = "Label_PD_DELI_GUBUN";
+            this.Label_PD_DELI_GUBUN.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.Label_PD_DELI_GUBUN.SizeF = new System.Drawing.SizeF(79.66269F, 23.00002F);
+            this.Label_PD_DELI_GUBUN.StylePriority.UseFont = false;
+            this.Label_PD_DELI_GUBUN.StylePriority.UseTextAlignment = false;
+            this.Label_PD_DELI_GUBUN.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // Label_PD_NM
+            // 
+            this.Label_PD_NM.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding(this.PD_NM, "Text", "")});
+            this.Label_PD_NM.Font = new System.Drawing.Font("HY견고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.Label_PD_NM.LocationFloat = new DevExpress.Utils.PointFloat(0F, 187F);
+            this.Label_PD_NM.Name = "Label_PD_NM";
+            this.Label_PD_NM.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.Label_PD_NM.SizeF = new System.Drawing.SizeF(350.1984F, 23F);
+            this.Label_PD_NM.StylePriority.UseFont = false;
+            // 
+            // Label_SEND_NM
+            // 
+            this.Label_SEND_NM.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding(this.SEND_NM, "Text", "")});
+            this.Label_SEND_NM.Font = new System.Drawing.Font("HY견고딕", 15F);
+            this.Label_SEND_NM.LocationFloat = new DevExpress.Utils.PointFloat(0F, 80.58929F);
+            this.Label_SEND_NM.Name = "Label_SEND_NM";
+            this.Label_SEND_NM.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.Label_SEND_NM.SizeF = new System.Drawing.SizeF(350.1984F, 23F);
+            this.Label_SEND_NM.StylePriority.UseFont = false;
+            this.Label_SEND_NM.Text = "Label_SEND_NM";
+            // 
+            // Label_PD_BAROCDE
+            // 
+            this.Label_PD_BAROCDE.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding(this.PD_BARCODE, "Text", "")});
+            this.Label_PD_BAROCDE.Font = new System.Drawing.Font("HY견고딕", 15F);
+            this.Label_PD_BAROCDE.LocationFloat = new DevExpress.Utils.PointFloat(0F, 165F);
+            this.Label_PD_BAROCDE.Name = "Label_PD_BAROCDE";
+            this.Label_PD_BAROCDE.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.Label_PD_BAROCDE.SizeF = new System.Drawing.SizeF(350.1984F, 20F);
+            this.Label_PD_BAROCDE.StylePriority.UseFont = false;
+            // 
+            // label9
+            // 
+            this.label9.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding(this.SEND_ADDR2, "Text", "")});
+            this.label9.Font = new System.Drawing.Font("HY견고딕", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label9.LocationFloat = new DevExpress.Utils.PointFloat(0F, 145F);
+            this.label9.Name = "label9";
+            this.label9.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label9.SizeF = new System.Drawing.SizeF(350.2F, 20F);
+            this.label9.StylePriority.UseFont = false;
+            // 
+            // Label_SEND_ADDR1
+            // 
+            this.Label_SEND_ADDR1.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding(this.SEND_ADDR1, "Text", "")});
+            this.Label_SEND_ADDR1.Font = new System.Drawing.Font("HY견고딕", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.Label_SEND_ADDR1.LocationFloat = new DevExpress.Utils.PointFloat(67.70834F, 123.5893F);
+            this.Label_SEND_ADDR1.Name = "Label_SEND_ADDR1";
+            this.Label_SEND_ADDR1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.Label_SEND_ADDR1.SizeF = new System.Drawing.SizeF(282.4901F, 20.00001F);
+            this.Label_SEND_ADDR1.StylePriority.UseFont = false;
+            this.Label_SEND_ADDR1.Text = "\\";
+            // 
+            // Label_SEND_TEL2
+            // 
+            this.Label_SEND_TEL2.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding(this.SEND_TEL2, "Text", "")});
+            this.Label_SEND_TEL2.Font = new System.Drawing.Font("HY견고딕", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.Label_SEND_TEL2.LocationFloat = new DevExpress.Utils.PointFloat(158.6806F, 103.5893F);
+            this.Label_SEND_TEL2.Name = "Label_SEND_TEL2";
+            this.Label_SEND_TEL2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.Label_SEND_TEL2.SizeF = new System.Drawing.SizeF(180.1586F, 20F);
+            this.Label_SEND_TEL2.StylePriority.UseFont = false;
+            // 
+            // Label_SEND_TEL1
+            // 
+            this.Label_SEND_TEL1.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding(this.SEND_TEL1, "Text", "")});
+            this.Label_SEND_TEL1.Font = new System.Drawing.Font("HY견고딕", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.Label_SEND_TEL1.LocationFloat = new DevExpress.Utils.PointFloat(0F, 103.5893F);
+            this.Label_SEND_TEL1.Name = "Label_SEND_TEL1";
+            this.Label_SEND_TEL1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.Label_SEND_TEL1.SizeF = new System.Drawing.SizeF(158.6806F, 20F);
+            this.Label_SEND_TEL1.StylePriority.UseFont = false;
+            // 
+            // Label_BR_TEL
+            // 
+            this.Label_BR_TEL.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding(this.BR_TEL, "Text", "")});
+            this.Label_BR_TEL.Font = new System.Drawing.Font("HY견고딕", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.Label_BR_TEL.LocationFloat = new DevExpress.Utils.PointFloat(0F, 65.57539F);
+            this.Label_BR_TEL.Name = "Label_BR_TEL";
+            this.Label_BR_TEL.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.Label_BR_TEL.SizeF = new System.Drawing.SizeF(350.1984F, 15.01389F);
+            this.Label_BR_TEL.StylePriority.UseFont = false;
+            // 
+            // Label_BR_NM
+            // 
+            this.Label_BR_NM.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding(this.BR_NM, "Text", "")});
+            this.Label_BR_NM.Font = new System.Drawing.Font("HY견고딕", 15.25F);
+            this.Label_BR_NM.LocationFloat = new DevExpress.Utils.PointFloat(0F, 42.57539F);
+            this.Label_BR_NM.Name = "Label_BR_NM";
+            this.Label_BR_NM.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.Label_BR_NM.SizeF = new System.Drawing.SizeF(350.1984F, 23F);
+            this.Label_BR_NM.StylePriority.UseFont = false;
+            // 
+            // Label_SEND_DATE_INFO
+            // 
+            this.Label_SEND_DATE_INFO.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding(this.SEND_DATE_INFO, "Text", "")});
+            this.Label_SEND_DATE_INFO.Font = new System.Drawing.Font("HY견고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.Label_SEND_DATE_INFO.LocationFloat = new DevExpress.Utils.PointFloat(0F, 17.04762F);
+            this.Label_SEND_DATE_INFO.Name = "Label_SEND_DATE_INFO";
+            this.Label_SEND_DATE_INFO.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.Label_SEND_DATE_INFO.SizeF = new System.Drawing.SizeF(350.1984F, 19.52778F);
+            this.Label_SEND_DATE_INFO.StylePriority.UseFont = false;
+            // 
+            // line6
+            // 
+            this.line6.LocationFloat = new DevExpress.Utils.PointFloat(353.1904F, 204F);
+            this.line6.Name = "line6";
+            this.line6.SizeF = new System.Drawing.SizeF(339.8096F, 2F);
+            // 
+            // line5
+            // 
+            this.line5.LineDirection = DevExpress.XtraReports.UI.LineDirection.Vertical;
+            this.line5.LocationFloat = new DevExpress.Utils.PointFloat(696F, 0F);
+            this.line5.Name = "line5";
+            this.line5.SizeF = new System.Drawing.SizeF(2F, 374.54F);
+            // 
+            // line4
+            // 
+            this.line4.LocationFloat = new DevExpress.Utils.PointFloat(353.19F, 252F);
+            this.line4.Name = "line4";
+            this.line4.SizeF = new System.Drawing.SizeF(339.8095F, 2.000015F);
+            // 
+            // line2
+            // 
+            this.line2.LocationFloat = new DevExpress.Utils.PointFloat(0.9920546F, 252F);
+            this.line2.Name = "line2";
+            this.line2.SizeF = new System.Drawing.SizeF(350.1984F, 2F);
+            // 
+            // line3
+            // 
+            this.line3.LocationFloat = new DevExpress.Utils.PointFloat(0F, 185F);
+            this.line3.Name = "line3";
+            this.line3.SizeF = new System.Drawing.SizeF(350.1984F, 2F);
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("HY견고딕", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label2.LocationFloat = new DevExpress.Utils.PointFloat(353.1905F, 0F);
+            this.label2.Name = "label2";
+            this.label2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label2.SizeF = new System.Drawing.SizeF(80.65476F, 17.04762F);
+            this.label2.StylePriority.UseFont = false;
+            this.label2.Text = "도착영업소";
+            // 
+            // line1
+            // 
+            this.line1.LineDirection = DevExpress.XtraReports.UI.LineDirection.Vertical;
+            this.line1.LocationFloat = new DevExpress.Utils.PointFloat(351.1905F, 0F);
+            this.line1.Name = "line1";
+            this.line1.SizeF = new System.Drawing.SizeF(2F, 374.5399F);
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("HY견고딕", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label1.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
+            this.label1.Name = "label1";
+            this.label1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label1.SizeF = new System.Drawing.SizeF(80.65475F, 17.04762F);
+            this.label1.StylePriority.UseFont = false;
+            this.label1.Text = "발송영업소";
+            // 
+            // BR_NM
+            // 
+            this.BR_NM.Description = "발송영업소";
+            this.BR_NM.Name = "BR_NM";
+            this.BR_NM.Value = "경동영업본부";
+            this.BR_NM.Visible = false;
+            // 
+            // SEND_DATE_INFO
+            // 
+            this.SEND_DATE_INFO.Name = "SEND_DATE_INFO";
+            this.SEND_DATE_INFO.Value = "2021.12.27 (09.26.2.50)";
+            this.SEND_DATE_INFO.Visible = false;
+            // 
+            // BR_TEL
+            // 
+            this.BR_TEL.Description = "발송 영업소 전화번호";
+            this.BR_TEL.Name = "BR_TEL";
+            this.BR_TEL.Value = "1899-7030";
+            this.BR_TEL.Visible = false;
+            // 
+            // SEND_TEL1
+            // 
+            this.SEND_TEL1.Description = "보내는분 전화번호1";
+            this.SEND_TEL1.Name = "SEND_TEL1";
+            this.SEND_TEL1.Value = "(010-9870-****)";
+            this.SEND_TEL1.Visible = false;
+            // 
+            // SEND_TEL2
+            // 
+            this.SEND_TEL2.Description = "보내는분 기타 전화번호";
+            this.SEND_TEL2.Name = "SEND_TEL2";
+            this.SEND_TEL2.Value = "(010-9870-****)";
+            this.SEND_TEL2.Visible = false;
+            // 
+            // SEND_ADDR1
+            // 
+            this.SEND_ADDR1.Description = "보내는분 주소1";
+            this.SEND_ADDR1.Name = "SEND_ADDR1";
+            this.SEND_ADDR1.Value = "서울시 양천구 목동남로 68";
+            this.SEND_ADDR1.Visible = false;
+            // 
+            // SEND_ADDR2
+            // 
+            this.SEND_ADDR2.Description = "보내는분 상세주";
+            this.SEND_ADDR2.Name = "SEND_ADDR2";
+            this.SEND_ADDR2.Value = "101호";
+            this.SEND_ADDR2.Visible = false;
+            // 
+            // PD_BARCODE
+            // 
+            this.PD_BARCODE.Description = "운송장 번호";
+            this.PD_BARCODE.Name = "PD_BARCODE";
+            this.PD_BARCODE.Value = "S/N 9999915310002";
+            this.PD_BARCODE.Visible = false;
+            // 
+            // SEND_NM
+            // 
+            this.SEND_NM.Description = "보내는분 성함";
+            this.SEND_NM.Name = "SEND_NM";
+            this.SEND_NM.Value = "주식회사 티피피";
+            this.SEND_NM.Visible = false;
+            // 
+            // PD_NM
+            // 
+            this.PD_NM.Description = "품목명";
+            this.PD_NM.Name = "PD_NM";
+            this.PD_NM.Value = "컴퓨터 부품";
+            this.PD_NM.Visible = false;
+            // 
+            // PD_DELI_GUBUN
+            // 
+            this.PD_DELI_GUBUN.Description = "택배구분";
+            this.PD_DELI_GUBUN.Name = "PD_DELI_GUBUN";
+            this.PD_DELI_GUBUN.Value = "(선불택배)";
+            this.PD_DELI_GUBUN.Visible = false;
+            // 
+            // PAGE_INFO
+            // 
+            this.PAGE_INFO.Description = "페이지구분";
+            this.PAGE_INFO.Name = "PAGE_INFO";
+            this.PAGE_INFO.Value = "총 1개 1-1";
+            this.PAGE_INFO.Visible = false;
+            // 
+            // PD_PACK
+            // 
+            this.PD_PACK.Description = "포장상태";
+            this.PD_PACK.Name = "PD_PACK";
+            this.PD_PACK.Value = "박스";
+            this.PD_PACK.Visible = false;
+            // 
+            // PD_DOCK1
+            // 
+            this.PD_DOCK1.Description = "첫번째 터미널 도크";
+            this.PD_DOCK1.Name = "PD_DOCK1";
+            this.PD_DOCK1.Value = "고촌1 발송2-173";
+            this.PD_DOCK1.Visible = false;
+            // 
+            // PD_BARCODE_SEQ
+            // 
+            this.PD_BARCODE_SEQ.Description = "운송장 순번";
+            this.PD_BARCODE_SEQ.Name = "PD_BARCODE_SEQ";
+            this.PD_BARCODE_SEQ.Value = "9999915310002.2";
+            this.PD_BARCODE_SEQ.Visible = false;
+            // 
+            // BR_END_NM
+            // 
+            this.BR_END_NM.Description = "도착영업소";
+            this.BR_END_NM.Name = "BR_END_NM";
+            this.BR_END_NM.Value = "고촌1 발송2-173";
+            this.BR_END_NM.Visible = false;
+            // 
+            // BR_END_TEL
+            // 
+            this.BR_END_TEL.Description = "도착 영업소 전화번호";
+            this.BR_END_TEL.Name = "BR_END_TEL";
+            this.BR_END_TEL.Value = "054-771-2856";
+            this.BR_END_TEL.Visible = false;
+            // 
+            // RECV_NM
+            // 
+            this.RECV_NM.Description = "받는분 성함";
+            this.RECV_NM.Name = "RECV_NM";
+            this.RECV_NM.Value = "홍*동";
+            this.RECV_NM.Visible = false;
+            // 
+            // RECV_TEL1
+            // 
+            this.RECV_TEL1.Description = "받는분 전화번호1";
+            this.RECV_TEL1.Name = "RECV_TEL1";
+            this.RECV_TEL1.Value = "(010-1234-****)";
+            this.RECV_TEL1.Visible = false;
+            // 
+            // RECV_TEL2
+            // 
+            this.RECV_TEL2.Description = "받는분 전화번호2";
+            this.RECV_TEL2.Name = "RECV_TEL2";
+            this.RECV_TEL2.Value = "(010-2580-****)";
+            this.RECV_TEL2.Visible = false;
+            // 
+            // RECV_ADDR1
+            // 
+            this.RECV_ADDR1.Description = "받는분 주소";
+            this.RECV_ADDR1.Name = "RECV_ADDR1";
+            this.RECV_ADDR1.Value = "서울특별시 금천구 가산디지털로 19";
+            this.RECV_ADDR1.Visible = false;
+            // 
+            // RECV_ADDR2
+            // 
+            this.RECV_ADDR2.Description = "받는분 상세주소";
+            this.RECV_ADDR2.Name = "RECV_ADDR2";
+            this.RECV_ADDR2.Value = "18층 1801";
+            this.RECV_ADDR2.Visible = false;
+            // 
+            // RECV_ZIPCODE
+            // 
+            this.RECV_ZIPCODE.Description = "받는분 우편번호";
+            this.RECV_ZIPCODE.Name = "RECV_ZIPCODE";
+            this.RECV_ZIPCODE.Value = "(08594)";
+            this.RECV_ZIPCODE.Visible = false;
+            // 
+            // PD_TEMP
+            // 
+            this.PD_TEMP.Description = "물품분류 우측 상단";
+            this.PD_TEMP.Name = "PD_TEMP";
+            this.PD_TEMP.Value = "타지역";
+            this.PD_TEMP.Visible = false;
+            // 
+            // PD_MEMO
+            // 
+            this.PD_MEMO.Description = "메모";
+            this.PD_MEMO.Name = "PD_MEMO";
+            this.PD_MEMO.Value = "메모 TEST";
+            this.PD_MEMO.Visible = false;
+            // 
+            // PD_DOCK2
+            // 
+            this.PD_DOCK2.Description = "두 번째 터미널 도크";
+            this.PD_DOCK2.Name = "PD_DOCK2";
+            this.PD_DOCK2.Value = "경주외동석계1317";
+            this.PD_DOCK2.Visible = false;
+            // 
+            // CUSTOMER_CENTER
+            // 
+            this.CUSTOMER_CENTER.Description = "고객센터 정보";
+            this.CUSTOMER_CENTER.Name = "CUSTOMER_CENTER";
+            this.CUSTOMER_CENTER.Value = "고객센터 : 1899-5368";
+            this.CUSTOMER_CENTER.Visible = false;
+            // 
+            // SEND_ZIPCODE
+            // 
+            this.SEND_ZIPCODE.Description = "보내는분 우편번호";
+            this.SEND_ZIPCODE.Name = "SEND_ZIPCODE";
+            this.SEND_ZIPCODE.Value = "(08101)";
+            this.SEND_ZIPCODE.Visible = false;
+            // 
+            // kdexp
+            // 
+            this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
+                        this.TopMargin,
+                        this.Detail,
+                        this.BottomMargin});
+            this.DisplayName = "kdexp";
+            this.Margins = new System.Drawing.Printing.Margins(5, 5, 5, 0);
+            this.Name = "kdexp";
+            this.PageHeight = 394;
+            this.PageWidth = 787;
+            this.PaperKind = System.Drawing.Printing.PaperKind.Custom;
+            this.Parameters.AddRange(new DevExpress.XtraReports.Parameters.Parameter[] {
+                        this.BR_NM,
+                        this.SEND_DATE_INFO,
+                        this.BR_TEL,
+                        this.SEND_TEL1,
+                        this.SEND_TEL2,
+                        this.SEND_ADDR1,
+                        this.SEND_ADDR2,
+                        this.PD_BARCODE,
+                        this.SEND_NM,
+                        this.PD_NM,
+                        this.PD_DELI_GUBUN,
+                        this.PAGE_INFO,
+                        this.PD_PACK,
+                        this.PD_DOCK1,
+                        this.PD_BARCODE_SEQ,
+                        this.BR_END_NM,
+                        this.BR_END_TEL,
+                        this.RECV_NM,
+                        this.RECV_TEL1,
+                        this.RECV_TEL2,
+                        this.RECV_ADDR1,
+                        this.RECV_ADDR2,
+                        this.RECV_ZIPCODE,
+                        this.PD_TEMP,
+                        this.PD_MEMO,
+                        this.PD_DOCK2,
+                        this.CUSTOMER_CENTER,
+                        this.SEND_ZIPCODE});
+            this.Version = "11.1";
+            ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
+        }
+    }
+}

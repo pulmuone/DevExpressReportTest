@@ -9,11 +9,15 @@ namespace XtraReportSerialization {
     public class Report2 : DevExpress.XtraReports.UI.XtraReport {
         private DevExpress.XtraReports.UI.TopMarginBand TopMargin;
         private DevExpress.XtraReports.UI.DetailBand Detail;
-        private DevExpress.XtraReports.UI.XRLabel label1;
+        private DevExpress.XtraReports.UI.XRPageBreak pageBreak1;
+        private DevExpress.XtraReports.UI.FormattingRule formattingRule1;
         private DevExpress.XtraReports.UI.XRTable table1;
         private DevExpress.XtraReports.UI.XRTableRow tableRow1;
         private DevExpress.XtraReports.UI.XRTableCell tableCell1;
+        private DevExpress.XtraReports.UI.XRTableCell tableCell2;
+        private DevExpress.XtraReports.UI.XRTableCell tableCell3;
         private DevExpress.XtraReports.UI.BottomMarginBand BottomMargin;
+        private DevExpress.XtraReports.Parameters.Parameter parameter1;
         private System.Resources.ResourceManager _resources;
         public Report2() {
             this.InitializeComponent();
@@ -33,52 +37,58 @@ namespace XtraReportSerialization {
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
             this.Detail = new DevExpress.XtraReports.UI.DetailBand();
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
-            this.label1 = new DevExpress.XtraReports.UI.XRLabel();
+            this.pageBreak1 = new DevExpress.XtraReports.UI.XRPageBreak();
             this.table1 = new DevExpress.XtraReports.UI.XRTable();
             this.tableRow1 = new DevExpress.XtraReports.UI.XRTableRow();
             this.tableCell1 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.tableCell2 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.tableCell3 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.formattingRule1 = new DevExpress.XtraReports.UI.FormattingRule();
+            this.parameter1 = new DevExpress.XtraReports.Parameters.Parameter();
             ((System.ComponentModel.ISupportInitialize)(this.table1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
             // TopMargin
             // 
+            this.TopMargin.HeightF = 68F;
             this.TopMargin.Name = "TopMargin";
             this.TopMargin.Visible = false;
             // 
             // Detail
             // 
             this.Detail.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-                        this.label1,
+                        this.pageBreak1,
                         this.table1});
-            this.Detail.HeightF = 44.79167F;
+            this.Detail.HeightF = 43F;
             this.Detail.Name = "Detail";
             // 
             // BottomMargin
             // 
-            this.BottomMargin.HeightF = 51.04167F;
+            this.BottomMargin.HeightF = 51F;
             this.BottomMargin.Name = "BottomMargin";
             this.BottomMargin.Visible = false;
             // 
-            // label1
+            // pageBreak1
             // 
-            this.label1.LocationFloat = new DevExpress.Utils.PointFloat(138.9423F, 7.999958F);
-            this.label1.Name = "label1";
-            this.label1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
-            this.label1.SizeF = new System.Drawing.SizeF(100F, 23F);
-            this.label1.Text = "test";
+            this.pageBreak1.FormattingRules.Add(this.formattingRule1);
+            this.pageBreak1.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
+            this.pageBreak1.Name = "pageBreak1";
+            this.pageBreak1.Visible = false;
             // 
             // table1
             // 
-            this.table1.LocationFloat = new DevExpress.Utils.PointFloat(0F, 7.999958F);
+            this.table1.LocationFloat = new DevExpress.Utils.PointFloat(10.00002F, 10.00002F);
             this.table1.Name = "table1";
             this.table1.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
                         this.tableRow1});
-            this.table1.SizeF = new System.Drawing.SizeF(138.9423F, 25F);
+            this.table1.SizeF = new System.Drawing.SizeF(382.2917F, 30.20833F);
             // 
             // tableRow1
             // 
             this.tableRow1.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-                        this.tableCell1});
+                        this.tableCell1,
+                        this.tableCell2,
+                        this.tableCell3});
             this.tableRow1.Name = "tableRow1";
             this.tableRow1.Weight = 1;
             // 
@@ -88,7 +98,42 @@ namespace XtraReportSerialization {
                         new DevExpress.XtraReports.UI.XRBinding("Text", null, "DataTableReport.BARCODE")});
             this.tableCell1.Name = "tableCell1";
             this.tableCell1.Text = "tableCell1";
-            this.tableCell1.Weight = 3;
+            this.tableCell1.Weight = 1;
+            // 
+            // tableCell2
+            // 
+            this.tableCell2.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "DataTableReport.PRODUCT_NAME")});
+            this.tableCell2.Name = "tableCell2";
+            this.tableCell2.Text = "tableCell2";
+            this.tableCell2.Weight = 1;
+            // 
+            // tableCell3
+            // 
+            this.tableCell3.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "DataTableReport.CD_COLOR")});
+            this.tableCell3.Name = "tableCell3";
+            this.tableCell3.Text = "tableCell3";
+            this.tableCell3.Weight = 1;
+            // 
+            // formattingRule1
+            // 
+            this.formattingRule1.Condition = "([DataSource.CurrentRowIndex] % [Parameters.parameter1] == 0) And ([DataSource.Cu" +
+                "rrentRowIndex] != 0)";
+            this.formattingRule1.DataMember = null;
+            // 
+            // 
+            // 
+            this.formattingRule1.Formatting.Visible = DevExpress.Utils.DefaultBoolean.True;
+            this.formattingRule1.Name = "formattingRule1";
+            // 
+            // parameter1
+            // 
+            this.parameter1.Description = "rows per page";
+            this.parameter1.Name = "parameter1";
+            this.parameter1.Type = typeof(int);
+            this.parameter1.Value = 0;
+            this.parameter1.Visible = false;
             // 
             // Report2
             // 
@@ -97,10 +142,15 @@ namespace XtraReportSerialization {
                         this.Detail,
                         this.BottomMargin});
             this.DataMember = "DataTableReport";
-            this.Margins = new System.Drawing.Printing.Margins(100, 100, 100, 51);
+            this.FormattingRuleSheet.AddRange(new DevExpress.XtraReports.UI.FormattingRule[] {
+                        this.formattingRule1});
+            this.Landscape = true;
+            this.Margins = new System.Drawing.Printing.Margins(100, 100, 68, 51);
             this.Name = "Report2";
-            this.PageHeight = 1100;
-            this.PageWidth = 850;
+            this.PageHeight = 850;
+            this.PageWidth = 1100;
+            this.Parameters.AddRange(new DevExpress.XtraReports.Parameters.Parameter[] {
+                        this.parameter1});
             this.Version = "11.1";
             this.XmlDataPath = "D:\\02.Project\\02.tovix\\09.SourceReference\\DevExpressReportTest\\DevExpressReportTe" +
                 "st\\DataSetReport.xsd";
