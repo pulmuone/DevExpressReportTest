@@ -178,7 +178,6 @@
     <None Include="DataSetReport.xss">
       <DependentUpon>DataSetReport.xsd</DependentUpon>
     </None>
-    <None Include="DevExpressReportTest_TemporaryKey.pfx" />
     <Content Include="kdexp.repx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
